@@ -1,0 +1,78 @@
+useDynLib(SNSequate, .registration=TRUE, .fixes = "F_")
+
+import(stats)
+import(magic)
+import(DPpackage)
+import(plyr)
+import(progress)
+import(emdbook)
+import(knitr)
+
+
+importFrom("graphics", "par")
+importFrom("methods", "is")
+importFrom("grDevices", "rgb")
+importFrom("graphics", "axis", "hist", "layout", 
+           "lines", "plot", "polygon", "segments")
+
+export(
+bandwidth,
+bandwidth.default,
+eqp.eq,
+eqp.eq.default,
+irt.link,
+irt.link.default,
+ker.eq,
+ker.eq.default,
+le.eq,
+le.eq.default,
+lin.eq,
+lin.eq.default,
+loglin.smooth,
+loglin.smooth.default,
+mea.eq,
+mea.eq.default,
+PREp,
+PREp.default,
+SEED,
+SEED.default,
+gof,
+irt.eq,
+irt.eq.default,
+pasted_table_to_df,
+sim_unimodal,
+contaminate_sample,
+BNP.eq,
+BNP.eq.predict,
+tLDBPPdensity,
+tLDBPPdensity.default)
+
+S3method(print, bandwidth)
+S3method(print, eqp.eq)
+S3method(print, irt.link)
+S3method(print, ker.eq)
+S3method(summary, ker.eq)
+S3method(print, summary.ker.eq)
+S3method(print, le.eq)
+S3method(print, lin.eq)
+S3method(print, loglin.smooth)
+S3method(print, mea.eq)
+S3method(print, PREp)
+S3method(print, SEED)
+S3method(print, irt.eq)
+S3method(print, snse.gof)
+S3method(plot, BNP.eq.predict)
+S3method(print, BNP.eq.predict)
+
+S3method(bandwidth, default)
+S3method(eqp.eq, default)
+S3method(irt.link, default)
+S3method(ker.eq, default)
+S3method(le.eq, default)
+S3method(lin.eq, default)
+S3method(loglin.smooth, default)
+S3method(mea.eq, default)
+S3method(PREp, default)
+S3method(SEED, default)
+S3method(irt.eq, default)
+S3method(tLDBPPdensity, default)

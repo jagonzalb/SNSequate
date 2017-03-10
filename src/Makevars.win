@@ -1,0 +1,7 @@
+#PKG_FCFLAGS="-fno-stack-protector"
+
+ifeq "$(WIN)" "64"
+PKG_LIBS = ${R_LIBS_USER}/DPpackage/libs/x64/DPpackage.dll
+else
+PKG_LIBS = ${R_LIBS_USER}/DPpackage/libs/i386/DPpackage.dll
+endif

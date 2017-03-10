@@ -1,0 +1,3 @@
+#PKG_LIBS = ${R_LIBS_USER}/DPpackage/libs/DPpackage.so
+
+PKG_LIBS = `${R_HOME}/bin/Rscript -e "cat(find.package('DPpackage'))"`/libs/DPpackage.so
